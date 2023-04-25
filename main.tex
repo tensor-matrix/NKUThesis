@@ -1,0 +1,45 @@
+%!BIB program=biber
+
+\documentclass{nkuthesis} % 普通毕业论文
+%\documentclass[doublemajor]{nkuthesis} % 双学位毕业论文
+%\documentclass[multiuline]{nkuthesis} % 
+
+\input{chapter/commands} % 此文件预引用了一些宏包，列出如下：enumitem,biblatex。读者无需重复引用。
+
+% 使用文件预引用宏包的目的是方便对论文格式设定作调整，后续如有对论文模板的更新，方便替换文件。读者需要的宏包请在本文件导言区自行引用，如下
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{graphicx}
+\graphicspath{{images/}}% 为了文件归类的便捷，请将论文需要插入的所有图片放到文件夹images里面
+
+\usepackage{physics}
+
+% 引用参考文献只需编写文件nkthesis.bib
+
+\begin{document}
+	% 设置基本信息
+	% 注意:  逗号`,'是项目分隔符. 如果某一项的值出现逗号, 应放在花括号内, 如 {,}
+	%
+	\NKTsetup{%
+		中文题目 = 论文标题,
+		外文题目 = Title,
+		学号     = xxxxxxx,
+		姓名     = 学生,
+		年级     = 大四,
+		专业     = xx,
+		系别     = 物理,
+		学院     = xx学院,
+		% 双修专业 = , %  如果是双学位，请去掉这两个注释
+		% 双修院系 = ,
+		指导教师 = xx教授,
+		完成日期 =}
+	
+	\include{chapter/abstract}
+	\tableofcontents
+	\include{chapter/mainbody}
+	\include{chapter/references}
+	\include{chapter/appendix}
+	\include{chapter/acknowledgements}
+	%\include{chapter/resume}
+\end{document}

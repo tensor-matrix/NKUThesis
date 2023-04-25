@@ -1,0 +1,14 @@
+\usepackage{enumitem}
+\setenumerate[1]{topsep=3pt,parsep=0pt}
+\setitemize[1]{topsep=3pt,parsep=0pt}
+
+\usepackage[backend=biber,style=gb7714-2015,gbnamefmt=lowercase]{biblatex}
+\addbibresource{nkthesis.bib}
+\DeclareBibliographyCategory{cited}
+\AtEveryCitekey{\addtocategory{cited}{\thefield{entrykey}}}
+\makeatletter
+\DefineBibliographyStrings{english}{
+	andothers   = {\protect\textit{et al}.},
+	andothersincite={\protect\textit{et al}\adddot},
+}
+\makeatother
