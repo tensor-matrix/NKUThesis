@@ -271,21 +271,19 @@
 
 \def\abstractcn{
     \clearpage
-    \vspace*{15pt}
-    \centerline{\zihao{4}\rmfamily\bfseries\jiacu 摘\hskip 1em 要}
+    \chapter*{\zihao{4}\rmfamily\bfseries\jiacu 摘\hskip 1em 要}
     \addcontentsline{toc}{chapter}{摘要}
     \markboth{摘要}{摘要} 
-    \vspace*{18pt}
+    \vspace*{-20pt}
     \zihao{-4}}
 \let\endabstractcn\relax
 
 \def\abstract{
     \clearpage
-    \vspace*{15pt}
-    \centerline{\zihao{4}\usefont{OT1}{phv}{bx}{n}Abstract}
+    \chapter*{\zihao{4}\usefont{OT1}{phv}{bx}{n}Abstract}
     \addcontentsline{toc}{chapter}{Abstract}
     \markboth{Abstract}{Abstract}
-    \vspace*{18pt}
+    \vspace*{-20pt}
     \zihao{-4}}
 \let\endabstract\relax
 
