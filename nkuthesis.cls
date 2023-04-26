@@ -77,24 +77,32 @@
 	linkcolor=black}
 
 \ctexset{%
+    secnumdepth=3,
     part={%
         format=\centering\huge\bfseries},
     chapter={%
-        format=\centering\zihao{3}\rmfamily\bfseries\jiacu,
+        format=\centering\zihao{-3}\rmfamily\bfseries\jiacu,
         pagestyle=fancy,
         beforeskip=10pt,
         afterskip=40pt},
     section={%
-        format=\centering\bfseries\jiacu\zihao{-3},
+        format=\centering\bfseries\jiacu\zihao{4},
         name={第,节},
         number=\chinese{section},
-        beforeskip=20pt,
-        afterskip=4pt},
+        beforeskip=17.5pt,
+        afterskip=12.5pt},
     subsection={%
-        format=\bfseries\zihao{4},
+        format=\bfseries\zihao{-4},
+        beforeskip=5pt,
+        afterskip=5pt},
+    subsubsection={%
+        format=\bfseries\zihao{-4},
+        name={(,)},
+        number=\arabic{subsubsection},
         beforeskip=5pt,
         afterskip=5pt}
 }
+
 
 \linespread{1.5}
 
