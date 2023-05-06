@@ -61,7 +61,7 @@
 \def\theequation{\arabic{chapter}.\arabic{equation}}
 \@addtoreset{equation}{chapter}
 \let\oldappendix\appendix
-\renewcommand\appendix{\oldappendix\setcounter{equation}{0}}
+\renewcommand\appendix{\ctexset{section={name={附录,},number=\Alph{section}}}\oldappendix\setcounter{equation}{0}}
 
 %  页面样式设定
 
